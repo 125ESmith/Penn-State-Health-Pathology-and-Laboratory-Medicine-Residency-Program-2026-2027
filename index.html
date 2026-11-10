@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Penn State Health Pathology &amp; Laboratory Medicine Residency, 2026–2027</title>
+<meta name="description" content="Information for applicants to the Penn State Health Milton S. Hershey Medical Center Pathology and Laboratory Medicine Residency Program.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,500;8..60,600;8..60,700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#0b2341; --navy-2:#13365f; --blue:#1e5fa8; --sky:#e8f0fa;
+    --teal:#0f7d77; --teal-soft:#e3f3f1; --amber:#a86a12; --amber-soft:#fbf1df;
+    --ink:#1b2430; --muted:#5a6675; --line:#dbe2ea; --bg:#f7f9fc; --card:#fff;
+    --radius:14px;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth;scroll-padding-top:76px}
+  body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,sans-serif;color:var(--ink);background:var(--bg);line-height:1.6;font-size:16px}
+  h1,h2,h3{font-family:"Source Serif 4",Georgia,serif;color:var(--navy);line-height:1.2;margin:0 0 .5em}
+  h2{font-size:clamp(1.7rem,3vw,2.2rem)}
+  h3{font-size:1.25rem}
+  a{color:var(--blue)}
+  .wrap{max-width:1140px;margin:0 auto;padding:0 24px}
+
+  /* Nav */
+  header.nav{position:sticky;top:0;z-index:20;background:rgba(11,35,65,.97);backdrop-filter:blur(6px)}
+  .nav .wrap{display:flex;align-items:center;justify-content:space-between;height:64px;gap:16px}
+  .brand{color:#fff;text-decoration:none;font-weight:600;font-size:.98rem;letter-spacing:.01em;white-space:nowrap}
+  .brand span{opacity:.7;font-weight:400}
+  .nav ul{list-style:none;display:flex;gap:4px;margin:0;padding:0}
+  .nav ul a{color:#d6e2f2;text-decoration:none;font-size:.9rem;padding:8px 11px;border-radius:8px}
+  .nav ul a:hover,.nav ul a:focus{background:rgba(255,255,255,.1);color:#fff}
+  .menu-btn{display:none;background:none;border:1px solid rgba(255,255,255,.35);color:#fff;border-radius:8px;padding:6px 12px;font:inherit;cursor:pointer}
+  @media (max-width:900px){
+    .menu-btn{display:block}
+    .brand span{display:none}
+    .nav ul{display:none;position:absolute;top:64px;left:0;right:0;background:var(--navy);flex-direction:column;padding:8px 16px 16px}
+    .nav ul.open{display:flex}
+  }
+
+  /* Hero */
+  .hero{background:linear-gradient(135deg,var(--navy) 0%,var(--navy-2) 60%,#1a4c80 100%);color:#fff;padding:84px 0 72px;position:relative;overflow:hidden}
+  .hero::after{content:"";position:absolute;right:-120px;top:-120px;width:460px;height:460px;border-radius:50%;
+    background:radial-gradient(circle,rgba(255,255,255,.10) 0 2px,transparent 3px) 0 0/22px 22px;opacity:.6}
+  .eyebrow{text-transform:uppercase;letter-spacing:.14em;font-size:.78rem;font-weight:600;color:#9fc3ea;margin-bottom:14px}
+  .hero h1{color:#fff;font-size:clamp(2.1rem,5vw,3.4rem);max-width:820px}
+  .hero p.lead{font-size:1.15rem;color:#d6e2f2;max-width:680px;margin:0 0 28px}
+  .btns{display:flex;flex-wrap:wrap;gap:12px}
+  .btn{display:inline-block;padding:12px 20px;border-radius:10px;text-decoration:none;font-weight:600;font-size:.95rem}
+  .btn.primary{background:#fff;color:var(--navy)}
+  .btn.ghost{border:1px solid rgba(255,255,255,.45);color:#fff}
+  .stats{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:56px;position:relative;z-index:1}
+  .stat{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.15);border-radius:var(--radius);padding:18px 20px}
+  .stat b{display:block;font-family:"Source Serif 4",serif;font-size:2rem;line-height:1.1}
+  .stat span{font-size:.88rem;color:#c8d8ec}
+  @media (max-width:760px){.stats{grid-template-columns:repeat(2,1fr)}}
+
+  section{padding:80px 0}
+  section.alt{background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+  .intro{color:var(--muted);max-width:760px;margin:0 0 36px;font-size:1.05rem}
+
+  /* Cards */
+  .grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+  .grid2{display:grid;grid-template-columns:repeat(2,1fr);gap:22px}
+  @media (max-width:900px){.grid3,.grid2{grid-template-columns:1fr}}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:26px}
+  section.alt .card{background:var(--bg)}
+  .card ul{margin:0;padding-left:1.15em}
+  .card li{margin:.45em 0}
+  .tag{display:inline-block;font-size:.72rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:4px 9px;border-radius:999px;margin-bottom:12px}
+  .tag.gen{background:var(--sky);color:var(--blue)}
+  .tag.ap{background:var(--teal-soft);color:var(--teal)}
+  .tag.cp{background:var(--amber-soft);color:var(--amber)}
+  .callout{background:var(--sky);border-left:4px solid var(--blue);border-radius:10px;padding:16px 20px;margin-top:24px}
+
+  /* Rotation table */
+  .table-scroll{overflow-x:auto;border:1px solid var(--line);border-radius:var(--radius);background:#fff}
+  table.rot{border-collapse:collapse;width:100%;min-width:980px;font-size:.78rem}
+  table.rot th,table.rot td{border:1px solid var(--line);padding:8px 6px;text-align:center;vertical-align:middle}
+  table.rot thead th{background:var(--navy);color:#fff;font-weight:600}
+  table.rot th.row{background:var(--sky);color:var(--navy);font-size:.85rem;width:64px}
+  td.ap{background:var(--teal-soft);color:#0a5753}
+  td.cp{background:var(--amber-soft);color:#7a4c0b}
+  td.el{background:#eeeaf8;color:#4b3a8a}
+  td .split{display:block;font-size:.72rem;border-top:1px dashed currentColor;margin-top:4px;padding-top:4px;opacity:.9}
+  .legend{display:flex;gap:18px;flex-wrap:wrap;margin:14px 0 0;font-size:.85rem;color:var(--muted)}
+  .legend i{display:inline-block;width:14px;height:14px;border-radius:4px;vertical-align:-2px;margin-right:6px}
+  .abbr{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:6px 20px;font-size:.88rem;color:var(--muted);margin:0;padding:0;list-style:none}
+  .abbr b{color:var(--ink)}
+  .pairs{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
+  .pill{background:#fff;border:1px solid var(--line);border-radius:999px;padding:6px 12px;font-size:.86rem}
+  .pill b{color:var(--teal)}
+
+  /* Didactics */
+  .week{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:16px}
+  .week .card h3{font-size:1.05rem;margin-bottom:8px}
+  .week .time{font-size:.8rem;font-weight:600;color:var(--teal);text-transform:uppercase;letter-spacing:.06em}
+  .conf-tools{display:flex;gap:12px;align-items:center;margin:28px 0 14px;flex-wrap:wrap}
+  .conf-tools input{flex:1;min-width:220px;padding:11px 14px;border:1px solid var(--line);border-radius:10px;font:inherit;background:#fff}
+  .conf-tools small{color:var(--muted)}
+  table.conf{border-collapse:collapse;width:100%;background:#fff;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden}
+  table.conf th,table.conf td{text-align:left;padding:11px 16px;border-bottom:1px solid var(--line);font-size:.93rem}
+  table.conf th{background:var(--navy);color:#fff;font-weight:600}
+  table.conf tr:last-child td{border-bottom:0}
+  table.conf tr:nth-child(even) td{background:#fafbfd}
+
+  /* Resources */
+  .res{display:flex;gap:16px;align-items:flex-start;text-decoration:none;color:inherit;transition:transform .15s,box-shadow .15s}
+  .res:hover{transform:translateY(-2px);box-shadow:0 8px 24px rgba(11,35,65,.08)}
+  .res .ico{flex:none;width:44px;height:44px;border-radius:12px;display:grid;place-items:center;background:var(--sky);color:var(--blue)}
+  .res h3{font-size:1.05rem;margin-bottom:4px}
+  .res p{margin:0;color:var(--muted);font-size:.92rem}
+  .res .meta{font-size:.78rem;color:var(--blue);font-weight:600;margin-top:6px}
+
+  .contact{display:grid;grid-template-columns:1.2fr 1fr;gap:28px}
+  @media (max-width:900px){.contact{grid-template-columns:1fr}}
+  address{font-style:normal;line-height:1.75}
+
+  footer{background:var(--navy);color:#b9cbe2;padding:36px 0;font-size:.88rem}
+  footer a{color:#fff}
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <a class="brand" href="#top">PSH Pathology Residency <span>· 2026–2027</span></a>
+    <button class="menu-btn" aria-expanded="false" aria-controls="menu">Menu</button>
+    <ul id="menu">
+      <li><a href="#highlights">Highlights</a></li>
+      <li><a href="#curriculum">Curriculum</a></li>
+      <li><a href="#didactics">Didactics</a></li>
+      <li><a href="#educators">Residents as Educators</a></li>
+      <li><a href="#benefits">Benefits &amp; Well-Being</a></li>
+      <li><a href="#applicants">Applicants</a></li>
+    </ul>
+  </div>
+</header>
+
+<div class="hero" id="top">
+  <div class="wrap">
+    <div class="eyebrow">Penn State Health Milton S. Hershey Medical Center</div>
+    <h1>Pathology &amp; Laboratory Medicine Residency Program</h1>
+    <p class="lead">A four-year combined AP/CP program built on high-volume clinical experience, graduated autonomy, and a faculty-resident mentoring tradition that dates back to 1998.</p>
+    <div class="btns">
+      <a class="btn primary" href="#highlights">Explore the program</a>
+      <a class="btn ghost" href="#applicants">Information for applicants</a>
+    </div>
+    <div class="stats">
+      <div class="stat"><b>96%</b><span>Board pass rate</span></div>
+      <div class="stat"><b>~40,000</b><span>Surgical specimens per year</span></div>
+      <div class="stat"><b>~20,000</b><span>Cytology cases per year</span></div>
+      <div class="stat"><b>4</b><span>ACGME-accredited fellowships</span></div>
+    </div>
+  </div>
+</div>
+
+<!-- HIGHLIGHTS -->
+<section id="highlights">
+  <div class="wrap">
+    <h2>Program Highlights</h2>
+    <p class="intro">Residents train alongside faculty board-certified across the full spectrum of pathology subspecialties, many of whom hold education leadership roles at the institutional level.</p>
+    <div class="grid3">
+      <div class="card">
+        <span class="tag gen">General</span>
+        <ul>
+          <li>Faculty-resident mentoring program since 1998</li>
+          <li>Mentored quality improvement projects</li>
+          <li>Faculty and resident wellness committee</li>
+          <li>Resident research curriculum with basic and translational opportunities, support from the Pathology Core Research Laboratory, and departmental and institutional funding</li>
+          <li>Two-year longitudinal core curriculum of AP and CP didactics, including laboratory management</li>
+          <li>Subscriptions to Medical Training Solutions, MediaLab CE, RISE Plus (with question bank) and BoardVitals question banks</li>
+          <li>Support for departmental, institutional and national committee membership</li>
+          <li>Active resident participation in program decision-making</li>
+          <li>Opportunity for an outside elective rotation</li>
+        </ul>
+      </div>
+      <div class="card">
+        <span class="tag ap">Anatomic Pathology</span>
+        <ul>
+          <li>Graduated autonomy, with <strong>semi-independent sign-out</strong> as a senior resident</li>
+          <li>Supervised presentations at interdisciplinary conferences and tumor boards</li>
+          <li>Serve as primary pathologist for one interdisciplinary conference as a senior resident</li>
+          <li><strong>High-volume experience across all specialties:</strong> about 40,000 surgicals, 20,000 cytology cases (10,000 Paps, 5,000 fluids, 5,000 FNAs) and 90 autopsies each year</li>
+        </ul>
+      </div>
+      <div class="card">
+        <span class="tag cp">Clinical Pathology</span>
+        <ul>
+          <li><strong>Hands-on CP training</strong> focused on methodology and clinical consultation to medical services</li>
+          <li>Direct patient responsibilities on the transfusion medicine service</li>
+          <li>Opportunity to earn a <strong>Certificate of Apheresis Competence</strong></li>
+          <li>CP attendings rotate service coverage almost daily, giving broad exposure to faculty</li>
+          <li>CP consult rotations with real-time problem solving across laboratory medicine and its management</li>
+          <li>Participation in internal and external CAP laboratory inspections</li>
+          <li>Interaction with postdoctoral fellows in Medical Microbiology and Clinical Chemistry</li>
+        </ul>
+      </div>
+    </div>
+    <div class="callout">
+      <strong>Fellowships at Hershey:</strong> ACGME-accredited fellowships in Dermatopathology, Hematopathology, Transfusion Medicine and Surgical Pathology. Our graduates place successfully in the fellowships of their choice, both at Hershey and at other leading institutions.
+    </div>
+  </div>
+</section>
+
+<!-- CURRICULUM -->
+<section id="curriculum" class="alt">
+  <div class="wrap">
+    <h2>Curriculum &amp; Rotation Schedule</h2>
+    <p class="intro">The AP/CP program runs in thirteen 4-week blocks per year. It includes 28 structured AP rotations (14 true surgical pathology blocks with grossing, 2 SP selectives and 11 other AP) and 19 structured CP rotations. Residents may begin using electives as early as the PGY-2 year.</p>
+    <div class="table-scroll">
+      <table class="rot" id="rotTable" aria-label="AP/CP rotation schedule by PGY year and 4-week block"></table>
+    </div>
+    <div class="legend">
+      <span><i style="background:var(--teal-soft);border:1px solid #9fd3cd"></i>Anatomic pathology</span>
+      <span><i style="background:var(--amber-soft);border:1px solid #e8c78f"></i>Clinical pathology</span>
+      <span><i style="background:#eeeaf8;border:1px solid #c7bdea"></i>Elective</span>
+      <span>* Elective blocks may be used from PGY-2 onward</span>
+    </div>
+
+    <div class="grid2" style="margin-top:36px">
+      <div class="card">
+        <h3>Surgical pathology pairings</h3>
+        <p style="margin:0;color:var(--muted);font-size:.92rem">Number of 2-week blocks per subspecialty pairing (27 total)</p>
+        <div class="pairs">
+          <span class="pill">Gross / Frozen Section <b>4</b></span>
+          <span class="pill">GI <b>6</b> <small>(3 large, 3 small)</small></span>
+          <span class="pill">Breast <b>3</b></span>
+          <span class="pill">GYN <b>3</b></span>
+          <span class="pill">GU <b>3</b></span>
+          <span class="pill">ENT / Lung <b>3</b></span>
+          <span class="pill">Derm <b>2</b></span>
+          <span class="pill">MSK <b>2</b></span>
+          <span class="pill">Renal / Heart <b>1</b></span>
+        </div>
+        <p style="margin:18px 0 0;font-size:.9rem;color:var(--muted)">Molecular diagnostics is covered within every rotation whose section performs molecular-based assays. Electron microscopy can be done as part of the renal elective.</p>
+      </div>
+      <div class="card">
+        <h3>Abbreviations</h3>
+        <ul class="abbr">
+          <li><b>SP</b> Surgical pathology</li>
+          <li><b>AUT</b> Autopsy</li>
+          <li><b>CYTO</b> Cytology</li>
+          <li><b>AP HEME</b> Hematopathology</li>
+          <li><b>CP HEME</b> Clinical hematology</li>
+          <li><b>BB/TM</b> Blood bank, transfusion medicine &amp; apheresis</li>
+          <li><b>HLA</b> Histocompatibility</li>
+          <li><b>BBB</b> Blood bank bench</li>
+          <li><b>CHEM</b> Clinical chemistry</li>
+          <li><b>COAG</b> Coagulation</li>
+          <li><b>MICRO</b> Microbiology</li>
+          <li><b>CP CONS</b> CP consult (includes lab management)</li>
+          <li><b>INFO</b> Informatics</li>
+          <li><b>CYTOGEN/MOLEC</b> Cytogenetics &amp; molecular pathology</li>
+          <li><b>Gross SuperV</b> Gross room supervision</li>
+          <li><b>ELECT</b> Elective</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DIDACTICS -->
+<section id="didactics">
+  <div class="wrap">
+    <h2>Didactics &amp; Conferences</h2>
+    <p class="intro">Protected noon didactics run throughout the week, alongside a broad program of interdisciplinary conferences and tumor boards where residents present cases under faculty supervision.</p>
+    <h3>A typical month of didactics</h3>
+    <div class="week">
+      <div class="card"><div class="time">Weekly · Noon</div><h3>Core lecture series</h3><p style="margin:0;color:var(--muted);font-size:.92rem">Rotating lecture series in microbiology, chemistry and other core topics, plus software and systems training.</p></div>
+      <div class="card"><div class="time">Weekly · Noon</div><h3>Surgical Pathology Conference</h3><p style="margin:0;color:var(--muted);font-size:.92rem">Case-based AP conference held every week.</p></div>
+      <div class="card"><div class="time">Weekly · 8:00 am</div><h3>Dermatopathology Lecture</h3><p style="margin:0;color:var(--muted);font-size:.92rem">Weekly morning lecture series in dermatopathology.</p></div>
+      <div class="card"><div class="time">Weekly · Noon</div><h3>AP core topics &amp; Autopsy Conference</h3><p style="margin:0;color:var(--muted);font-size:.92rem">Organ-system lectures (for example, bone, breast, CNS tumors) with a monthly autopsy conference.</p></div>
+      <div class="card"><div class="time">Rotating · Noon</div><h3>Heme, Frozen Section &amp; Molecular</h3><p style="margin:0;color:var(--muted);font-size:.92rem">Benign hematology, frozen section and molecular/genomics conferences.</p></div>
+      <div class="card"><div class="time">Rotating · 1:15 pm</div><h3>CP Interesting Case &amp; Gross Path</h3><p style="margin:0;color:var(--muted);font-size:.92rem">CP interesting case conference alternating with gross pathology conference for AP/CP residents.</p></div>
+    </div>
+
+    <h3 style="margin-top:48px">Interdisciplinary conferences &amp; tumor boards</h3>
+    <div class="conf-tools">
+      <input id="confSearch" type="search" placeholder="Search conferences, for example “tumor board” or “Friday”" aria-label="Search conferences">
+      <small id="confCount"></small>
+    </div>
+    <table class="conf">
+      <thead><tr><th style="width:45%">Conference</th><th>When it meets</th></tr></thead>
+      <tbody id="confBody"></tbody>
+    </table>
+  </div>
+</section>
+
+<!-- EDUCATORS -->
+<section id="educators" class="alt">
+  <div class="wrap">
+    <h2>Residents as Educators</h2>
+    <p class="intro">Residents teach as well as learn. They give lectures and unknown conferences, attend Visiting Professor and Distinguished Educator lectures, and help teach medical students in pathology electives and laboratory and PBL/TBL sessions. Additional Resident as Educator sessions are sponsored by the Woodward Center for Excellence in Health Sciences Education together with the Office of Graduate Medical Education.</p>
+    <div class="grid3">
+      <div class="card">
+        <span class="tag gen">Medical education track</span>
+        <h3>Hippocrates Scholar Program</h3>
+        <p style="color:var(--muted);font-size:.93rem">A track that builds teaching skills and a community of practice among resident educators across Penn State.</p>
+        <ul><li>Curriculum design</li><li>Learning theory</li><li>Instructional design</li><li>Opportunities for teaching</li><li>Scholarly pursuits in medical education</li></ul>
+        <p style="font-size:.88rem;margin-bottom:0"><strong>Applications accepted each August.</strong></p>
+      </div>
+      <div class="card">
+        <span class="tag ap">Certification · CME credit</span>
+        <h3>Stanford Clinical Teaching Framework</h3>
+        <p style="color:var(--muted);font-size:.93rem">Seven two-hour sessions, limited to 12 learners each year. Residents, fellows and faculty are welcome. Certification is awarded after all seven sessions.</p>
+        <ul><li>Learning climate</li><li>Control of session</li><li>Communication of goals</li><li>Promotion of understanding and retention</li><li>Evaluation</li><li>Feedback</li><li>Promotion of self-directed learning</li></ul>
+        <p style="font-size:.88rem;margin-bottom:0"><a href="https://faculty.med.psu.edu/woodward-center/programs/" target="_blank" rel="noopener">Learn more about the Stanford Framework →</a></p>
+      </div>
+      <div class="card">
+        <span class="tag cp">Half-day retreats</span>
+        <h3>Teaching Champion Retreats</h3>
+        <p style="color:var(--muted);font-size:.93rem">Half-day retreats that build teaching skills and support personal teaching goals. Each covers adult learning theory and instructional techniques, with time to practice those skills on the spot and get feedback.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BENEFITS -->
+<section id="benefits">
+  <div class="wrap">
+    <h2>Benefits &amp; Well-Being</h2>
+    <p class="intro">Salary, benefits and resident agreements are set by Penn State Graduate Medical Education. Use the links below for the most current information.</p>
+    <div class="grid3">
+      <a class="card res" href="https://med.psu.edu/residencies-fellowships/benefits" target="_blank" rel="noopener">
+        <div class="ico" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l8 4v6c0 5-3.5 9-8 10-4.5-1-8-5-8-10V6z"/></svg></div>
+        <div><h3>Benefits &amp; Agreements</h3><p>Resident salary, benefits and sample agreements on the Penn State GME website.</p><div class="meta">med.psu.edu ↗</div></div>
+      </a>
+      <a class="card res" href="https://med.psu.edu/residencies-fellowships/well-being" target="_blank" rel="noopener">
+        <div class="ico" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.8 4.6a5.5 5.5 0 00-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 00-7.8 7.8L12 21l8.8-8.6a5.5 5.5 0 000-7.8z"/></svg></div>
+        <div><h3>Resident &amp; Fellow Well-Being</h3><p>Office of Professional Mental Health and other well-being resources from GME.</p><div class="meta">med.psu.edu ↗</div></div>
+      </a>
+      <a class="card res" href="documents/2025-Total-Rewards-Guide.pdf" target="_blank" rel="noopener">
+        <div class="ico" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><path d="M14 2v6h6"/></svg></div>
+        <div><h3>Total Rewards Guide 2025</h3><p>Penn State Health's guide to medical, dental, vision, retirement, time off and support programs.</p><div class="meta">PDF · 5 MB</div></div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- APPLICANTS -->
+<section id="applicants" class="alt">
+  <div class="wrap">
+    <h2>Information for Applicants</h2>
+    <div class="contact">
+      <div>
+        <p>Thank you for your interest in our program. As an invited applicant, you have access to the following for your information and review:</p>
+        <div class="card" style="margin:18px 0">
+          <h3 style="font-size:1.05rem">Sample Resident Contract, which includes</h3>
+          <ul><li>Salary and benefits information</li><li>Institutional Resident Appointment and Promotion Policy</li></ul>
+        </div>
+        <p>Please sign the <strong>Interview Attestation</strong> to acknowledge that you received this information. Emailed copies are available on request.</p>
+        <div class="btns" style="margin-top:18px">
+          <a class="btn" style="background:var(--navy);color:#fff" href="documents/Interview-Attestation.doc">Download Interview Attestation</a>
+          <a class="btn" style="border:1px solid var(--line);color:var(--navy);background:#fff" href="https://med.psu.edu/residencies-fellowships/benefits" target="_blank" rel="noopener">View sample contract ↗</a>
+        </div>
+      </div>
+      <div class="card">
+        <h3>Program contact</h3>
+        <address>
+          <strong>Beth Smith, C-TAGME</strong><br>
+          Department of Pathology<br>
+          Penn State Health Milton S. Hershey Medical Center<br>
+          Penn State College of Medicine<br>
+          500 University Drive, P.O. Box 850, H083<br>
+          Hershey, PA 17033-0850<br><br>
+          Tel: (717) 531-8247<br>
+          Fax: (717) 531-0153<br>
+          <a href="mailto:esmith31@pennstatehealth.psu.edu">esmith31@pennstatehealth.psu.edu</a>
+        </address>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    Penn State Health Milton S. Hershey Medical Center · Department of Pathology and Laboratory Medicine · 2026–2027 recruitment season.<br>
+    Information on this page is a summary. For official policies, salary and benefits, refer to the <a href="https://med.psu.edu/residencies-fellowships/benefits" target="_blank" rel="noopener">Penn State GME website</a>.
+  </div>
+</footer>
+
+<script>
+  // Mobile menu
+  const btn = document.querySelector('.menu-btn'), menu = document.getElementById('menu');
+  btn.addEventListener('click', () => { const o = menu.classList.toggle('open'); btn.setAttribute('aria-expanded', o); });
+  menu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => menu.classList.remove('open')));
+
+  // Rotation schedule (effective 7/1/23, updated 1/28/25)
+  const CP = ['CHEM','CP HEME','HLA/BBB','BB/TM','CP CONS','COAG','INFO / Lab Mgmt','MICRO','CYTOGEN / MOLEC'];
+  const schedule = {
+    'PGY-1': ['SP','SP','SP','SP','SP','CHEM','AUT / CYTO','AUT / CYTO',['AUT / Neuro','AUT / Peds'],'CP HEME','HLA/BBB','BB/TM','AP HEME'],
+    'PGY-2': ['SP','SP','SP','SP','AUT / CYTO','CP CONS','FORENSICS','BB/TM','AP HEME','CHEM','COAG','INFO / Lab Mgmt','MICRO'],
+    'PGY-3': ['SP','SP','SP','AUT / CYTO',['AUT / Neuro','AUT / Peds'],'BB/TM','AP HEME','CP CONS','CYTOGEN / MOLEC','SP','ELECT*','MICRO','ELECT*'],
+    'PGY-4': ['SP','SP','SP','AUT / CYTO','BB/TM','CP HEME','CP CONS','CHEM','MICRO','SP Selective / Gross SuperV','ELECT','ELECT','ELECT']
+  };
+  const t = document.getElementById('rotTable');
+  let html = '<thead><tr><th>Year</th>' + Array.from({length:13},(_,i)=>`<th>Block ${i+1}</th>`).join('') + '</tr></thead><tbody>';
+  for (const [yr, blocks] of Object.entries(schedule)) {
+    html += `<tr><th class="row" scope="row">${yr}</th>`;
+    for (const b of blocks) {
+      const label = Array.isArray(b) ? b[0] : b;
+      const cls = label.startsWith('ELECT') ? 'el' : CP.includes(label) ? 'cp' : 'ap';
+      html += Array.isArray(b) ? `<td class="${cls}">${b[0]}<span class="split">${b[1]}</span></td>` : `<td class="${cls}">${b}</td>`;
+    }
+    html += '</tr>';
+  }
+  t.innerHTML = html + '</tbody>';
+
+  // Interdisciplinary conferences
+  const conferences = [
+    ['Adult Sarcoma Conference','2nd and 4th Monday, 5:00 pm'],
+    ['Autopsy Conference','3rd Wednesday, noon'],
+    ['Breast Tumor Conference','Every Thursday, 11:00 am'],
+    ['Dermatology Grand Rounds','1st Thursday, 8:00 am (9 months/year)'],
+    ['Dermatology Patient Conference','3rd Thursday, 1:00 pm'],
+    ['Dermatology Consult Conference','4th Thursday, 4 times/year'],
+    ['Head & Neck Cancer Tumor Board','1st, 3rd, 4th and 5th Wednesday, 4:00 pm'],
+    ['GI Fellows Conference','4th Wednesday, 4:00 pm'],
+    ['GI Tumor Board','Last Friday, 7:00 am · 2nd Tuesday, 4:00 pm'],
+    ['GU Tumor Board','1st, 2nd, 4th and 5th Thursday, 7:00 am'],
+    ['GYN Oncology Tumor Board','1st and 3rd Monday, 8:00 am'],
+    ['GYN Pathology–Radiology Conference','Scheduled periodically'],
+    ['Heart Transplant Biopsy Conference','1st Monday, 10:00 am (2nd Monday if a holiday)'],
+    ['Hematologic Malignancy Conference','Every Wednesday, 5:00 pm'],
+    ['Hepatology Conference','1st and 3rd Wednesday, 11:15 am'],
+    ['IBD Interdisciplinary Conference','3rd Thursday, 7:00 am'],
+    ['Liver Transplant Conference','1st and 3rd Wednesday, 11:30 am'],
+    ['Melanoma & Skin Tumor Board','Last Tuesday, 5:00 pm'],
+    ['Molecular Tumor Board','3rd Friday, 2:00 pm'],
+    ['Musculoskeletal (MSK) Conference','1st and 3rd Tuesday, 7:00 am'],
+    ['Neurosurgery Tumor Board','1st, 3rd and 5th Friday, 7:00 am'],
+    ['Ophthalmology Pathology','1st Wednesday, 7:00 am'],
+    ['Pediatric GI Conference','2nd Monday, 4:00 pm'],
+    ['Pediatric Neuro-Oncology','1st Thursday, 7:30 am'],
+    ['Pediatric Leukemia/Lymphoma Conference','1st Thursday, 2:00 pm'],
+    ['Pediatric Tumor Board','1st and 3rd Friday, 1:00 pm'],
+    ['Pulmonary Conference','2nd Friday, 7:30 am'],
+    ['Pulmonary Fibrosis Conference','2nd and 4th Friday, 2:00–3:00 pm'],
+    ['Renal Biopsy Conference','3rd Tuesday, 4:00 pm'],
+    ['Renal Transplant Conference','2nd and 4th Friday, noon'],
+    ['Thyroid Conference','1st Wednesday, 2:00 pm']
+  ];
+  const body = document.getElementById('confBody'), count = document.getElementById('confCount'), search = document.getElementById('confSearch');
+  function render(q='') {
+    q = q.trim().toLowerCase();
+    const rows = conferences.filter(c => !q || c.join(' ').toLowerCase().includes(q));
+    body.innerHTML = rows.map(([n,w]) => `<tr><td><strong>${n}</strong></td><td>${w}</td></tr>`).join('')
+      || '<tr><td colspan="2" style="color:var(--muted)">No conferences match that search.</td></tr>';
+    count.textContent = `${rows.length} of ${conferences.length} conferences`;
+  }
+  search.addEventListener('input', e => render(e.target.value));
+  render();
+</script>
+</body>
+</html>
