@@ -33,7 +33,8 @@
   .nav ul a{color:#d6e2f2;text-decoration:none;font-size:.9rem;padding:8px 11px;border-radius:8px}
   .nav ul a:hover,.nav ul a:focus{background:rgba(255,255,255,.1);color:#fff}
   .menu-btn{display:none;background:none;border:1px solid rgba(255,255,255,.35);color:#fff;border-radius:8px;padding:6px 12px;font:inherit;cursor:pointer}
-  @media (max-width:900px){
+  .nav ul a{padding:8px 9px;font-size:.86rem}
+  @media (max-width:1120px){
     .menu-btn{display:block}
     .brand span{display:none}
     .nav ul{display:none;position:absolute;top:64px;left:0;right:0;background:var(--navy);flex-direction:column;padding:8px 16px 16px}
@@ -118,6 +119,39 @@
   @media (max-width:900px){.contact{grid-template-columns:1fr}}
   address{font-style:normal;line-height:1.75}
 
+  /* About / numbers */
+  .facts{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-bottom:36px}
+  @media (max-width:900px){.facts{grid-template-columns:repeat(2,1fr)}}
+  .fact{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:18px 20px}
+  section.alt .fact{background:var(--bg)}
+  .fact b{display:block;font-family:"Source Serif 4",serif;font-size:1.8rem;color:var(--navy);line-height:1.1}
+  .fact span{font-size:.86rem;color:var(--muted)}
+  .firsts{list-style:none;padding:0;margin:0}
+  .firsts li{padding:10px 0 10px 30px;border-bottom:1px solid var(--line);position:relative;margin:0}
+  .firsts li:last-child{border-bottom:0}
+  .firsts li::before{content:"★";position:absolute;left:4px;top:10px;color:var(--teal)}
+
+  /* Timeline */
+  .timeline{position:relative;margin:8px 0 0;padding:0;list-style:none}
+  .timeline::before{content:"";position:absolute;left:75px;top:6px;bottom:6px;width:2px;background:var(--line)}
+  .timeline li{display:grid;grid-template-columns:56px 1fr;gap:40px;padding:0 0 22px;position:relative}
+  .timeline .yr{font-family:"Source Serif 4",serif;font-weight:700;color:var(--blue);font-size:1.1rem;text-align:right}
+  .timeline li::after{content:"";position:absolute;left:70px;top:7px;width:12px;height:12px;border-radius:50%;background:#fff;border:3px solid var(--blue)}
+  .timeline p{margin:0;font-size:.95rem}
+
+  /* Housing */
+  .house-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:18px}
+  .house h3{font-size:1.1rem;margin-bottom:2px}
+  .house .loc{font-size:.86rem;color:var(--muted);margin-bottom:12px}
+  .house dl{display:grid;grid-template-columns:auto 1fr;gap:4px 14px;margin:0 0 12px;font-size:.88rem}
+  .house dt{color:var(--muted)}
+  .house dd{margin:0;font-weight:500}
+  .house .amen{font-size:.84rem;color:var(--muted);margin:0 0 12px}
+  .house .dist{float:right;background:var(--teal-soft);color:var(--teal);font-weight:700;font-size:.78rem;padding:4px 10px;border-radius:999px}
+  .chips{display:flex;flex-wrap:wrap;gap:8px;margin:10px 0 0;padding:0;list-style:none}
+  .chips li{background:var(--sky);color:var(--navy);border-radius:999px;padding:5px 12px;font-size:.85rem;margin:0}
+  section.alt .chips li{background:#fff;border:1px solid var(--line)}
+
   footer{background:var(--navy);color:#b9cbe2;padding:36px 0;font-size:.88rem}
   footer a{color:#fff}
 </style>
@@ -132,8 +166,12 @@
       <li><a href="#highlights">Highlights</a></li>
       <li><a href="#curriculum">Curriculum</a></li>
       <li><a href="#didactics">Didactics</a></li>
-      <li><a href="#educators">Residents as Educators</a></li>
-      <li><a href="#benefits">Benefits &amp; Well-Being</a></li>
+      <li><a href="#educators">Teaching</a></li>
+      <li><a href="#about">About PSH</a></li>
+      <li><a href="#inclusion">Inclusion</a></li>
+      <li><a href="#hershey">Life in Hershey</a></li>
+      <li><a href="#benefits">Benefits</a></li>
+      <li><a href="#downloads">Downloads</a></li>
       <li><a href="#applicants">Applicants</a></li>
     </ul>
   </div>
@@ -318,12 +356,165 @@
   </div>
 </section>
 
+<!-- ABOUT -->
+<section id="about">
+  <div class="wrap">
+    <h2>About Penn State Health</h2>
+    <p class="intro">Penn State Health is a multi-hospital health system serving patients and communities across 15 counties of central Pennsylvania. Its mission is to improve health through patient care, research, education and community outreach. Penn State College of Medicine, on the same Hershey campus, partners with the health system on research and education.</p>
+
+    <div class="facts">
+      <div class="fact"><b>611</b><span>Beds at Hershey Medical Center, the system's flagship teaching and research hospital</span></div>
+      <div class="fact"><b>722</b><span>Medical and surgical residents and fellows enrolled</span></div>
+      <div class="fact"><b>$159M</b><span>Research awards funded annually at the College of Medicine</span></div>
+      <div class="fact"><b>4×</b><span>Magnet designation for Hershey Medical Center</span></div>
+    </div>
+
+    <div class="grid2">
+      <div class="card">
+        <h3>Distinctions</h3>
+        <ul class="firsts">
+          <li>The only hospital in Pennsylvania with a Level I trauma center for both adults and children</li>
+          <li>The region's only heart transplant program</li>
+          <li>The region's only children's hospital, with the highest-level (Level IV) neonatal intensive care unit</li>
+          <li>The first health facility in central Pennsylvania to offer CAR-T cell therapy for adults</li>
+          <li>College of Medicine research on human papillomavirus led to the world's first HPV vaccine</li>
+          <li>Recognized as a national leader in accelerating change in medical education</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>The Hershey campus</h3>
+        <p style="color:var(--muted);font-size:.95rem">Hershey Medical Center's campus includes institutes focused on cancer, heart and vascular disease and the neurosciences, along with Penn State Health Children's Hospital and the Penn State Cancer Institute. The wider system includes St. Joseph, Holy Spirit, Hampden and Lancaster medical centers and Pennsylvania Psychiatric Institute.</p>
+        <div class="btns" style="margin-top:16px">
+          <a class="btn" style="background:var(--navy);color:#fff" href="documents/Campus-Map-2025.pdf" target="_blank" rel="noopener">View campus map</a>
+          <a class="btn" style="border:1px solid var(--line);color:var(--navy);background:#fff" href="documents/About-Penn-State-Health-2025.pdf" target="_blank" rel="noopener">About Us brochure</a>
+        </div>
+      </div>
+    </div>
+
+    <h3 style="margin-top:48px">Our legacy</h3>
+    <div class="card">
+      <ul class="timeline">
+        <li><span class="yr">1963</span><p>The M.S. Hershey Foundation offers $50 million to Penn State to establish a medical school and teaching hospital in Hershey. With $21.3 million more from the U.S. Public Health Service, it builds a medical school, hospital and research center in honor of Milton S. Hershey.</p></li>
+        <li><span class="yr">1965</span><p>Founding Dean Dr. George Harrell oversees early construction and creates the first Departments of Humanities and of Family and Community Medicine at any U.S. medical school.</p></li>
+        <li><span class="yr">1967</span><p>The first class of medical students arrives on September 25, while much of the campus is still under construction.</p></li>
+        <li><span class="yr">1970</span><p>The Medical Center admits its first patient on October 14.</p></li>
+        <li><span class="yr">1976</span><p>Hershey develops the world's first mechanical blood pump approved to support patients awaiting heart transplant. The Penn State Heart follows in 1985.</p></li>
+        <li><span class="yr">1977</span><p>THON, Penn State's student dance marathon, begins supporting the Four Diamonds Fund for children with cancer at the Children's Hospital.</p></li>
+        <li><span class="yr">1986</span><p>Life Lion Critical Care Transport launches, the first program of its kind on the East Coast.</p></li>
+        <li><span class="yr">1994</span><p>Dr. Eliot Vesell's twin studies of drug metabolism help lay the foundation for personalized medicine.</p></li>
+        <li><span class="yr">2010</span><p>An expanded Clinical Simulation Center opens, building on nearly two decades of simulation education.</p></li>
+        <li><span class="yr">2014</span><p>Penn State Health, a multi-hospital health system serving central Pennsylvania, is created.</p></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- INCLUSION -->
+<section id="inclusion" class="alt">
+  <div class="wrap">
+    <h2>Diversity, Equity &amp; Inclusion</h2>
+    <p class="intro">Penn State Health's Office for Diversity, Equity and Inclusion (ODEI) supports colleagues and patients through education, employee resource groups, patient advisory councils and clear policies against bias and discrimination.</p>
+    <div class="grid3">
+      <div class="card">
+        <span class="tag gen">Programs</span>
+        <h3>Education &amp; events</h3>
+        <ul>
+          <li>Inclusion Academy and Inclusion Week</li>
+          <li>Culturally responsive care and experiential learning</li>
+          <li>Monthly virtual <strong>Upstander Cafés</strong> on microaggressions, unconscious bias and social justice, held the first Friday of each month</li>
+          <li>Bilingual education in Spanish, Arabic and sign language</li>
+          <li>Language access, health equity series and on-demand sessions</li>
+        </ul>
+      </div>
+      <div class="card">
+        <span class="tag ap">Community</span>
+        <h3>Resource groups</h3>
+        <p style="color:var(--muted);font-size:.92rem;margin-top:0">Groups that help create a positive workplace and work with leadership on initiatives. Relevant to residents:</p>
+        <ul class="chips">
+          <li>Network for Under-Represented Residents &amp; Fellows (NURF)</li>
+          <li>Black Physician &amp; Professional Staff Association</li>
+          <li>Hispanic Professional Association</li>
+          <li>Asian Physician &amp; Professional Staff Association</li>
+          <li>International Workforce Inclusion</li>
+          <li>LGBTQ+</li>
+          <li>Military/Veteran</li>
+          <li>Multicultural</li>
+          <li>Disability</li>
+          <li>Interfaith</li>
+          <li>Next Gen</li>
+        </ul>
+      </div>
+      <div class="card">
+        <span class="tag cp">Policies</span>
+        <h3>Protecting our clinicians</h3>
+        <p style="color:var(--muted);font-size:.92rem;margin-top:0">Penn State Health was one of the first health systems in the country to adopt a formal policy protecting providers from patient bias. Requests to change providers based on race, ethnicity, religion, sexual orientation or gender identity are not honored.</p>
+        <p style="font-size:.9rem;margin-bottom:0"><strong>Questions or concerns:</strong><br>ODEI · (717) 531-1012<br>Compliance Hotline · (800) 560-1637</p>
+      </div>
+    </div>
+    <p style="margin-top:20px;font-size:.92rem;color:var(--muted)">Patient advisory councils include the Diversity Council, Disability Inclusion Advisory Council, Sexual and Gender Minority Advisory Council and Multicultural Advisory Council. <a href="documents/Diversity-Equity-Inclusion-2024.pdf" target="_blank" rel="noopener">Read the ODEI overview (PDF)</a>.</p>
+  </div>
+</section>
+
+<!-- LIFE IN HERSHEY -->
+<section id="hershey">
+  <div class="wrap">
+    <h2>Life in Hershey</h2>
+    <p class="intro">Hershey, “The Sweetest Place on Earth,” is a resort town of about 20,000 with a small-town feel, in a growing metropolitan area of roughly 400,000. Harrisburg, the state capital, is 12 miles away. Baltimore, Philadelphia, Washington, D.C., New York City and Pittsburgh are all within a few hours' drive.</p>
+
+    <div class="grid3">
+      <div class="card">
+        <span class="tag gen">Play</span>
+        <h3>In Hershey</h3>
+        <ul>
+          <li>Hersheypark, Hershey's Chocolate World and ZooAmerica</li>
+          <li>The Hershey Story museum and Hershey Gardens</li>
+          <li>Hershey Bears hockey and concerts at the Giant Center</li>
+          <li>Hershey Theatre and the Hershey Area Playhouse</li>
+          <li>Tanger Outlets, golf and the Spa at the Hotel Hershey</li>
+          <li>A wellness-focused farmers market on the Medical Center's west campus, Thursday afternoons from May to October</li>
+        </ul>
+      </div>
+      <div class="card">
+        <span class="tag ap">Explore</span>
+        <h3>Around the region</h3>
+        <ul>
+          <li><strong>Harrisburg:</strong> City Island, Harrisburg Senators baseball, Whitaker Center, Broad Street Market and the National Civil War Museum</li>
+          <li><strong>Lancaster County</strong> (about 30 miles): restaurants, outlets, markets and Amish country</li>
+          <li><strong>Gettysburg</strong> (about 49 miles): Gettysburg National Military Park</li>
+          <li>Indian Echo Caverns, state parks, hiking and fishing</li>
+          <li>Nearby skiing at Roundtop and Liberty</li>
+          <li>Atlantic beaches in Maryland, Delaware and New Jersey are a few hours away</li>
+        </ul>
+      </div>
+      <div class="card">
+        <span class="tag cp">Getting around</span>
+        <h3>Travel &amp; transportation</h3>
+        <ul>
+          <li>Harrisburg International Airport, with Baltimore–Washington and Philadelphia airports within driving distance</li>
+          <li>Amtrak rail service from Harrisburg</li>
+          <li>Capital Area Transit (CAT) buses</li>
+          <li>Campus shuttles with real-time GPS tracking</li>
+        </ul>
+        <p style="font-size:.9rem;margin-bottom:0"><a href="https://www.visithersheyharrisburg.org" target="_blank" rel="noopener">Visit Hershey &amp; Harrisburg →</a></p>
+      </div>
+    </div>
+
+    <h3 style="margin-top:48px">Housing near the Medical Center</h3>
+    <p style="color:var(--muted);margin-top:0">A sample of apartment communities popular with residents, sorted by distance from Hershey Medical Center (HMC). Rents are monthly ranges and subject to change, so check with each property for current pricing.</p>
+    <div class="house-grid" id="houseGrid"></div>
+
+    <div class="callout" style="margin-top:36px">
+      <strong>Partners in Medicine (PIM):</strong> a social and support group for spouses and significant others of residents, fellows, medical students and new attending physicians at Hershey. PIM organizes events like book clubs, walking and run groups, children's playgroups, a welcome picnic and a Thanksgiving dinner, plus community service. Candidates and their partners are welcome to reach out at <a href="mailto:PIMHershey@gmail.com">PIMHershey@gmail.com</a>.
+    </div>
+  </div>
+</section>
+
 <!-- BENEFITS -->
-<section id="benefits">
+<section id="benefits" class="alt">
   <div class="wrap">
     <h2>Benefits &amp; Well-Being</h2>
     <p class="intro">Salary, benefits and resident agreements are set by Penn State Graduate Medical Education. Use the links below for the most current information.</p>
-    <div class="grid3">
+    <div class="grid2">
       <a class="card res" href="https://med.psu.edu/residencies-fellowships/benefits" target="_blank" rel="noopener">
         <div class="ico" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l8 4v6c0 5-3.5 9-8 10-4.5-1-8-5-8-10V6z"/></svg></div>
         <div><h3>Benefits &amp; Agreements</h3><p>Resident salary, benefits and sample agreements on the Penn State GME website.</p><div class="meta">med.psu.edu ↗</div></div>
@@ -336,7 +527,20 @@
         <div class="ico" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><path d="M14 2v6h6"/></svg></div>
         <div><h3>Total Rewards Guide 2025</h3><p>Penn State Health's guide to medical, dental, vision, retirement, time off and support programs.</p><div class="meta">PDF · 5 MB</div></div>
       </a>
+      <a class="card res" href="https://bewell.pennstatehealth.org" target="_blank" rel="noopener">
+        <div class="ico" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M8 13a4 4 0 008 0"/><path d="M9 9h.01M15 9h.01"/></svg></div>
+        <div><h3>BeWell Wellness Program</h3><p>Weekly wellness articles, a healthy recipe portal, recorded lunch-and-learns, newsletters, and trainings on stress management, healthy living and financial stress.</p><div class="meta">bewell.pennstatehealth.org ↗</div></div>
+      </a>
     </div>
+  </div>
+</section>
+
+<!-- DOWNLOADS -->
+<section id="downloads">
+  <div class="wrap">
+    <h2>Downloads</h2>
+    <p class="intro">Brochures and reference documents for applicants.</p>
+    <div class="grid3" id="dlGrid"></div>
   </div>
 </section>
 
@@ -453,6 +657,53 @@
   }
   search.addEventListener('input', e => render(e.target.value));
   render();
+
+  // Housing options (rates subject to change)
+  const housing = [
+    {n:'University Manor East', a:'300 University Manor West, Hershey', ph:'717-531-8210', url:'https://students.med.psu.edu/student-life/housing/', cost:'$985–1,320', units:'1–4 BR (2 and 4 BR can be shared)', inc:'All utilities except TV, plus internet', amen:'Playground, washer/dryer, permit parking for tenants', heat:'Electric heat / central air', pets:'No', d:0, dl:'On campus'},
+    {n:'Briarcrest Gardens', a:'999 Briarcrest Drive, Hershey', ph:'717-533-9377', url:'http://www.briarcrestgardens.com', cost:'$820–1,295', units:'1–3 BR, townhomes', inc:'Water, sewer, trash', amen:'Pool, tennis court, covered parking available, washer/dryer in most units, patio or balcony', heat:'Electric / central air', pets:'Yes', d:0.5, dl:'0.5 mi'},
+    {n:'Verde', a:'308 East 2nd Street, Hummelstown', ph:'717-566-5400', url:'http://www.liveatverde.com', cost:'Call for pricing', units:'1–2 BR', inc:'Sewer, trash, recycling', amen:'Clubroom, fitness center, grilling areas, washer/dryer, patio or balcony, garage available (extra fee), smoke-free', heat:'Electric heat / central air', pets:'Yes', d:1, dl:'1 mi'},
+    {n:'Rosedale Apartments', a:'199 Cherry Drive, Hershey', ph:'717-533-6677', url:'http://www.boydwilson.com/rosedale-apartments.php', cost:'$800–1,200', units:'1–2 BR', inc:'Lawn maintenance, snow removal, trash', amen:'Pool, tennis courts, 24-hour fitness center, washer/dryer, some dishwashers, free parking, ADA', heat:'Gas / central air', pets:'Yes', d:1.1, dl:'1.1 mi'},
+    {n:'Hershey Heights', a:'2151 Gramercy Place, Hummelstown', ph:'717-470-8696', url:'https://www.rphersheyheights.com/', cost:'$1,200–2,400', units:'1–3 BR', inc:'Trash and recycling', amen:'Clubhouse, pool, playground, tennis and basketball courts, walking trail, ample parking, some fireplaces', heat:'Electric heat pump / central air', pets:'Yes', d:2.9, dl:'2.9 mi'},
+    {n:'The Reserve at Hershey Meadows', a:'201 Osprey Lane, Hummelstown', ph:'833-217-5841', url:'http://www.thereserveathersheymeadows.com', cost:'$1,130–1,910', units:'1–3 BR, townhomes', inc:'Water, sewer, trash', amen:'Washer/dryer, some garages, clubhouse, fitness center, pool, hot tub, dog park', heat:'Gas / central air', pets:'Yes', d:4.9, dl:'4.9 mi'},
+    {n:'Stonebrook at Northside Crossing', a:'125 Farmshed Road, Palmyra', ph:'717-298-5030', url:'http://www.stonebrookatnorthside.com', cost:'$1,150–1,525', units:'2–3 BR, townhomes', inc:'Sewer, lawn care, snow removal, trash (apartments only)', amen:'Pool, clubhouse, 24/7 fitness center, playground, trails, washer/dryer, garage parking, ADA', heat:'Heat pump or gas / central air', pets:'Yes', d:5.3, dl:'5.3 mi'},
+    {n:'Springford Apartments', a:'6140 B Springford Drive, Harrisburg', ph:'833-372-8703', url:'http://www.springfordapts.com', cost:'$990–1,370', units:'1–3 BR', inc:'Trash, sewer', amen:'Fitness center, pool, sauna, tennis and basketball courts, clubhouse, nature trail, garages, washer/dryer', heat:'Gas / central air', pets:'Yes', d:7.9, dl:'7.9 mi'}
+  ];
+  document.getElementById('houseGrid').innerHTML = housing.sort((x,y)=>x.d-y.d).map(h => `
+    <div class="card house">
+      <span class="dist">${h.dl}</span>
+      <h3><a href="${h.url}" target="_blank" rel="noopener">${h.n}</a></h3>
+      <div class="loc">${h.a} · ${h.ph}</div>
+      <dl>
+        <dt>Rent</dt><dd>${h.cost}</dd>
+        <dt>Units</dt><dd>${h.units}</dd>
+        <dt>Included</dt><dd>${h.inc}</dd>
+        <dt>Heat/AC</dt><dd>${h.heat}</dd>
+        <dt>Pets</dt><dd>${h.pets}</dd>
+      </dl>
+      <p class="amen">${h.amen}</p>
+    </div>`).join('');
+
+  // Downloads
+  const docs = [
+    ['Interview Attestation','Acknowledgment form for invited applicants','Interview-Attestation.doc','Word'],
+    ['Program Highlights','Summary of general, AP and CP program features','Program-Highlights.docx','Word'],
+    ['Rotation Schedule','AP/CP 13-block schedule by PGY year','Rotation-Schedule-AP-CP.docx','Word'],
+    ['Campus Map 2025','Hershey Medical Center main and east campus','Campus-Map-2025.pdf','PDF'],
+    ['About Penn State Health','System overview, locations and key facts (2025)','About-Penn-State-Health-2025.pdf','PDF'],
+    ['Our Legacy','History of the Medical Center and College of Medicine','Our-Legacy.pdf','PDF'],
+    ['Diversity, Equity & Inclusion','Overview of the Office for DEI (2024)','Diversity-Equity-Inclusion-2024.pdf','PDF'],
+    ['Housing Options','Apartment communities near Hershey','Housing-Options-Near-Hershey.docx','Word'],
+    ['Partners in Medicine','Support group for partners of trainees','Partners-in-Medicine.pdf','PDF'],
+    ['Total Rewards Guide 2025','Penn State Health employee benefits guide','2025-Total-Rewards-Guide.pdf','PDF'],
+    ['BeWell Brochure','Penn State Health wellness program','Be-Well-Brochure-2025.pdf','PDF']
+  ];
+  const icon = '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><path d="M14 2v6h6"/></svg>';
+  document.getElementById('dlGrid').innerHTML = docs.map(([t,d,f,k]) => `
+    <a class="card res" href="documents/${f}" target="_blank" rel="noopener">
+      <div class="ico" aria-hidden="true">${icon}</div>
+      <div><h3>${t}</h3><p>${d}</p><div class="meta">${k}</div></div>
+    </a>`).join('');
 </script>
 </body>
 </html>
